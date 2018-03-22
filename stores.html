@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="eng">
+  
+<head>
+  
+<title>Big Skinny</title>
+  
+<meta charset="UTF-8">
+<meta name="author" content="Team 2">
+<meta name="keywords" content="Carnegie Mellon University,67-250,Term Project, Spring 2017">
+<meta name="description" content="Website Redesign of Big Skinny Crop ">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+<link rel="stylesheet" media="all" type="text/css" href="css/style.css">
+
+</head>
+  
+<body>
+
+<!-- adapted from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_architect&stacked=h -->
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="index.html" class="w3-bar-item w3-button"><b>BIG</b> Skinny</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="products.html" class="w3-bar-item w3-button">Products</a>
+      <div class="dropdown">
+        <span><a class="w3-bar-item w3-button">Locations</a></span>
+        <div class="dropdown-content">
+        <div class="streetfair"><a href="streetfair.html" class="streetfair">Street Fair</a></div>
+        <div class="stores"><a href="stores.html" class="stores">Stores</a></div>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div id="googleMap" >
+      <iframe src="http://batchgeo.com/map/bigskinnyretailstores" frameborder="0" width="100%" height="600" style="border:1px solid #aaa; border-radius:10px;"></iframe>  
+</div>
+
+<!-- adapted from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_startup -->
+
+<!-- Page content -->
+<div class="w3-content w3-padding" id="container" >
+
+<div class="w3-container"  id="stores">
+  <h1 class="w3-center" >Stores</h1>
+  <p class="w3-center w3-large">Big Skinny wallets are now available in over 800 Staples stores worldwide.</p>
+
+  <div class="col-sm-3 col-md-3">
+        <form id="search" class="w3-center" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for a location.." name="q">
+            <button  type="submit" ><img src="images/search-button.png"></button>
+        </div>
+        </form>
+    </div>
+
+    <div id="resultsDiv"></div>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <h3>North America</h3>
+      <a href="#CANADA">Canada</a>
+      <p>Mexico</p>
+      <p>Costa Rica</p>
+      <a href="#US">United States</a>
+      
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <h3>Africa</h3>
+      <p>Kenya</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <h3>Asia</h3>
+      <p>Japan</p>
+      <p>Singapore</p>
+      <p>Philippines</p>
+
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <h3>Oceania</h3>
+      <p>New Zealand</p>
+    </div>
+  </div>
+
+
+<div id ="address" style="padding:50px 16px">
+      <div id="US">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center">United States</h3>
+      <p class="w3-large ">Alabama </p>
+      <p class="w3-quarter">Mori Luggage<br>Riverchase Galleria <br>Birmingham, AL</p>
+      <p class="w3-quarter">Edward's Discount Drugs <br>8625 Grant Rd<br> 
+      Wilmwe, AL</p>
+      <p class="w3-quarter">Mori Luggage<br>Parkway Place<br>Huntsville, AL </p>
+      <p class="w3-quarter">Mori Luggage<br>Riverchase Galleria <br>Birmingham, AL</p>
+
+      <p class="w3-large ">California </p>
+      <p class="w3-quarter">CaroloBags<br>5907 Fair Oaks Boulevard<br>Carmichael, CA 95608 </p>
+      <p class="w3-quarter">Rooten's Luggage Center<br>17775 Main St<br>Irvine, CA  </p>
+      <p class="w3-quarter">Thee Foxes' Trot<br> 260 Forest Avenue, Suite 2<br>Laguna Beach, CA </p>
+      <p class="w3-quarter">Going In Style<br>609 Stanford Shopping Center<br>Palo Alto, CA </p>
+      
+      </div>
+
+       <div id="CANADA">
+       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center">Canada</h3>
+       <br>
+      <p class="w3-quarter">Aretz Originals<br>91 Franklin Avenue<br>Toronto, ON</p>
+      <p class="w3-quarter">Chic Thrills<br>6316 Main Street<br> Stoufville, ON</p>
+      <p class="w3-quarter">DutchGrowers<br>685 Reid Rd<br>Saskatoon, SK</p>
+      <p class="w3-quarter">Fancy That Fine Gifts<br>98 Broadway<br>Corner Brook NL</p>
+      </div>
+
+      <div id="MEXICO">
+       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center">Mexico</h3>
+       <br>
+      <p class="w3-quarter">Ferrara's Cart<br>Blvd Diaz 130<br>Corp. Sta. <br>Maria P150 10 <br>Monterrey NL</p>
+      <p class="w3-quarter">TNC Store<br>Plaza Florencia<br>200 mts norte del BAC<br>Carretera a Guachipelin<br>Escazu, Escazu</p>
+      <p class="w3-quarter"></p>
+      <p class="w3-quarter"></p>
+      </div>
+
+     
+</div>
+</div>
+<!-- End page content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+	<div id="icons">
+				<a href="mailto:bigskinny@customerstatus.com"><img src="images/logo-mail.png"></a>
+				<a href="https://twitter.com/big_skinny
+				" target="_blank"><img src="images/logo-twitter.png"></a>
+				<a href="https://www.facebook.com/bigskinny" target="_blank"><img src="images/logo-facebook.png"></a>
+				<a href="https://www.pinterest.com/bigskinny/" target="_blank"><img src="images/logo-pinterest.png"></a>
+				<a href="https://www.youtube.com/watch?v=lLlH78Ofkrk" target="_blank"><img src="images/logo-youtube.png"></a><br/>
+
+	 </div>
+     <div id="info">
+
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="products.html" class="w3-bar-item w3-button">Products</a>
+      <a href="streetfair.html" class="w3-bar-item w3-button">Fairs</a>
+      <a href="stores.html" class="w3-bar-item w3-button">Stores</a>
+      <a href="about.html#contact" class="w3-bar-item w3-button">Contact</a>
+     </div>
+  <p>&copy; Copyrights All rights reserved.</p>
+ 
+  
+ <br/>
+
+</footer>
+
+
+
+</body>
+</html>

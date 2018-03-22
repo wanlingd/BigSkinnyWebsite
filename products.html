@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="eng">
+  
+<head>
+  
+<title>Products</title>
+  
+<meta charset="UTF-8">
+<meta name="author" content="Team 2">
+<meta name="keywords" content="Carnegie Mellon University,67-250,Term Project, Spring 2017">
+<meta name="description" content="Website Redesign of Big Skinny Crop ">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" media="all" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- adapted from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_architect&stacked=h -->
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="index.html" class="w3-bar-item w3-button"><b>BIG</b> Skinny</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="products.html" class="w3-bar-item w3-button">Products</a>
+      <div class="dropdown">
+        <span><a class="w3-bar-item w3-button">Locations</a></span>
+      <div class="dropdown-content">
+        <div class="streetfair"><a href="streetfair.html" class="streetfair">Street Fair</a></div>
+        <div class="stores"><a href="stores.html" class="stores">Stores</a></div>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+<!-- adapted from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_clothing_store&stacked=h -->
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+  </div>
+  <div class="w3-padding-32 w3-large w3-text-grey" style="font-weight:bold">
+
+    <a id="everyday-link" onclick="myAccFunc(); changeBigHover('#everyday-link')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" > Everyday styles <i class="fa fa-caret-down"></i>
+    </a>
+
+
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a id="womens-link" href="#womens" class="w3-bar-item w3-button w3-light-grey" onclick="changeHover('#womens-link')"><!-- <i class="fa fa-caret-right w3-margin-right"></i> -->Women's Wallets</a>
+      <a id="mens-link" href="#mens" class="w3-bar-item w3-button" onclick="changeHover('#mens-link')">Men's Wallets</a>
+      <a id="cards-link" href="#cards" class="w3-bar-item w3-button" onclick="changeHover('#cards-link')">Card Holders</a>
+    </div>
+
+
+    <a id="travel-link" href="#travel" class="w3-bar-item w3-button" onclick="changeBigHover('#travel-link')">Travel Companions</a>
+    <a id="rfid-link" href="#RFID" class="w3-bar-item w3-button" onclick="changeBigHover('#rfid-link')">RFID Collections</a>
+
+  </div>
+
+<br>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+
+
+  <!-- Image header -->
+  <div class="w3-display-container2 w3-container">
+    <img src="images/2.jpg" alt="Jeans" style="width:100%">
+<!--     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div> -->
+  </div>
+
+
+<!-- womens -->
+
+  <div class="w3-container w3-text-grey" id="womens">
+    <p>Women's Wallets</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pw5.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Taxicat Bifold Wallet<br><b>$41.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pw1.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Trixie Trifold Wallet<br><b>$47.95</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pw2.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Nylon Myphone Wallet<br><b>$29.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pw3.jpg" style="width:100%; height: 200px">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Myphone Wristlet<br><b>$36.00</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pw4.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Panther Clutch<br><b>$25.50</b></p>
+      </div>
+
+
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pw8.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Trifold Wallet<br><b class="w3-text-red">$29.95</b></p>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pw6.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Clutch<br><b>$29.95</b></p>
+      </div>
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pw7.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Slimvelope Wallet<br><b>$32.95</b></p>
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- mens -->
+  
+  <div class="w3-container w3-text-grey" id="mens">
+    <p>Men's Wallets</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pm8.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Curve Bifold<br><b>$41.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pm1.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Blocking Bifold<br><b>$35.95</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pm2.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Bifold<br><b>$41.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pm3.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Trifold<br><b>$27.95</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pm4.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Blocking Trifold<br><b>$35.95</b></p>
+      </div>
+
+
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pm5.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Skinny Bifold<br><b class="w3-text-red">$47.95</b></p>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pm6.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Super Skinny Bifold<br><b>$24.95</b></p>
+      </div>
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pm7.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Hybrid Wallet<br><b>$27.95</b></p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+<!-- cards -->
+  
+  <div class="w3-container w3-text-grey" id="cards">
+    <p>Card Holders</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pc8.jpg" style="width:100%; height: 200px">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Moneyclip Bifold<br><b>$23.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pc1.jpg" style="width:100%; height: 200px">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Card Case<br><b>$13.50</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pc2.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Card Case<br><b>$8.50</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pc3.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Mini Skinny<br><b>$13.50</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pc4.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Card Holder<br><b>$12.50</b></p>
+      </div>
+
+
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pc5.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Card Insert<br><b class="w3-text-red">$9.00</b></p>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pc6.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Card Sleeve<br><b>$3.99</b></p>
+      </div>
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pc7.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Passport Sleeve<br><b>$4.99</b></p>
+      </div>
+    </div>
+
+
+  </div>
+
+<br>
+
+<!-- TRAVEL -->
+
+  <!-- Image header -->
+  <div class="w3-display-container2 w3-container" id="travel">
+    <img src="images/1.jpg" alt="Jeans" style="width:100%">
+<!--     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div> -->
+  </div>
+
+
+<!-- travel -->
+
+  <div class="w3-container w3-text-grey">
+    <p>Travel Wallets</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pt8.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Myphone Wallet<br><b>$29.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pt1.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Passport Holder<br><b>$23.95</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pt2.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Traveler<br><b>$29.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pt3.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Panther Clutch<br><b>$29.95</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pt4.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Bifold Wallet<br><b>$26.50</b></p>
+      </div>
+
+
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pt5.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Myphone Wallet<br><b class="w3-text-red">$29.95</b></p>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pt6.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Traveler Wallet<br><b>$41.95</b></p>
+      </div>
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pt7.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Passport Holder<br><b>$27.95</b></p>
+      </div>
+    </div>
+
+
+  </div>
+
+<br>
+
+<!-- RFID -->
+  <!-- Image header -->
+  <div class="w3-display-container2 w3-container" id="RFID">
+    <img src="images/3.jpg" alt="Jeans" style="width:100%">
+<!--     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div> -->
+  </div>
+
+
+<!-- rfid -->
+
+  <div class="w3-container w3-text-grey">
+    <p>RFID Wallets</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pr8.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Nylon Taxicat<br><b>$41.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pr1.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Myphone Wallet<br><b>$47.95</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pr2.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Bifold<br><b>$41.95</b></p>
+      </div>
+
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pr3.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Blocking Bifold<br><b>$35.95</b></p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pr4.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Curve Bifold<br><b>$41.95</b></p>
+      </div>
+
+
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="images/pr5.jpg" style="width:100%; height: 200px">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Super Skinny Bifold<br><b class="w3-text-red">$47.95</b></p>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pr6.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Traveler Wallet<br><b>$41.95</b></p>
+      </div>
+
+
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="images/pr7.jpg" style="width:100%; height: 200px">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Add to cart <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Leather Bifold<br><b>$47.95</b></p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+<br><br>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+    <div id="icons">
+                <a href="mailto:bigskinny@customerstatus.com"><img src="images/logo-mail.png"></a>
+                <a href="https://twitter.com/big_skinny
+                " target="_blank"><img src="images/logo-twitter.png"></a>
+                <a href="https://www.facebook.com/bigskinny" target="_blank"><img src="images/logo-facebook.png"></a>
+                <a href="https://www.pinterest.com/bigskinny/" target="_blank"><img src="images/logo-pinterest.png"></a>
+                <a href="https://www.youtube.com/watch?v=lLlH78Ofkrk" target="_blank"><img src="images/logo-youtube.png"></a><br/>
+
+      </div>
+  <div id="info">
+
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="products.html" class="w3-bar-item w3-button">Products</a>
+      <a href="streetfair.html" class="w3-bar-item w3-button">Fairs</a>
+      <a href="stores.html" class="w3-bar-item w3-button">Stores</a>
+      <a href="about.html#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+  <p>&copy; Copyrights All rights reserved.</p>
+ 
+  
+ <br/>
+
+</footer>
+
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="email" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
